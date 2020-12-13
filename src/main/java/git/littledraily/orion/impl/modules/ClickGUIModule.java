@@ -7,8 +7,7 @@ import org.lwjgl.input.Keyboard;
 
 public class ClickGUIModule extends Module {
     public ClickGUIModule() {
-        super("ClickGUI", Category.CLIENT);
-        setKey(Keyboard.KEY_Y);
+        super("ClickGUI", "Opens the ClickGUI", Category.CLIENT, Keyboard.KEY_Y);
     }
 
     @Override
