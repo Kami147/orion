@@ -24,20 +24,28 @@ public class Module {
 
     protected final List<Setting> settings = new ArrayList<>();
 
-    public Module(String name, String description, Category category) {
+    public Module(String name, String description, Category category, int key) {
         this.name = name;
         this.description = description;
         this.category = category;
         enabled = false;
-        key = Keyboard.KEY_NONE;
+        this.key = key;
+    }
+    
+    public Module(String name, String description, Category category) {
+        this.name = name;
+        this.description = description;
+        this.category = category;
+        this.enabled = false;
+        this.key = Keyboard.KEY_NONE;
     }
 
     public Module(String name, Category category) {
         this.name = name;
         this.description = null;
         this.category = category;
-        enabled = false;
-        key = Keyboard.KEY_NONE;
+        this.enabled = false;
+        this.key = Keyboard.KEY_NONE;
     }
 
     public void toggle() {
