@@ -29,7 +29,7 @@ public class Module {
         this.name = name;
         this.description = description;
         this.category = category;
-        enabled = false;
+        this.enabled = false;
         this.key = key;
     }
     
