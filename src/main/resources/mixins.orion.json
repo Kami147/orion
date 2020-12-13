@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "package": "git.littledraily.orion.mixin.mixins",
+  "refmap": "mixins.phi.refmap.json",
+  "mixins": [
+    "MixinNetworkManager",
+    "MixinEntityPlayerSP"
+  ]
+}
